@@ -19,7 +19,11 @@ const { title, description = 'Temukan data dan insight pendidikan Indonesia di E
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="keywords" content="data pendidikan, transformasi pendidikan, edukasi digital, literasi data, edukasi Indonesia, kebijakan pendidikan" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-Robots-Tag" content="index, follow" />
     <title>{title}</title>
+    <link rel="canonical" href={Astro.url.href} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
