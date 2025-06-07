@@ -17,7 +17,7 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  site: "https://edudatacenter.pages.dev/", // your site url
+  site: "https://data.educentrals.com/", // your site url
   title: "Data Center by EduCentrals",
   slogan: "Inti Data, Inti Perubahan Pendidikan.",
   description: "EduDataCenter adalah pusat data pendidikan berbasis digital yang menyediakan informasi, analisis, dan insight terbaru untuk mendukung kebijakan dan keputusan berbasis data. Dari angka putus sekolah hingga performa siswa, kami hadir untuk menjadikan data sebagai pondasi perubahan.",
