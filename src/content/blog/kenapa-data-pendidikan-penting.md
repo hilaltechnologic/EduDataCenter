@@ -5,6 +5,8 @@ date: 2025-03-22
 author: Hilal Technologic
 tags: ["data pendidikan", "transformasi pendidikan", "edukasi digital", "literasi data"]
 canonicalUrl: "https://data.educentrals.com/kenapa-data-pendidikan-penting"
+image: /images/data-pendidikan-era-digital.png
+alt text: "Infografik pentingnya data pendidikan di era digital"
 ---
 
 > *"Tanpa data, kita hanya berpendapat." – W. Edwards Deming*
