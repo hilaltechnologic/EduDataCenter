@@ -131,6 +131,3 @@ Kalau kita mau pendidikan yang lebih baik, kita harus mulai dari sini: **membaca
 Kunjungi [EduDataCenter](https://data.educentrals.com/) dan temukan visualisasi, insight, dan analisis terbaru tentang pendidikan di Indonesia.
 
 ---
-
-![Infografik pentingnya data pendidikan di era digital](https://data.educentrals.com/data-pendidikan-era-digital.png)
-*Alt Text: Infografik pentingnya data pendidikan di era digital*
