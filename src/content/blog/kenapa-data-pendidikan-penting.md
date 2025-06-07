@@ -130,5 +130,5 @@ Kunjungi [EduDataCenter](https://data.educentrals.com/) dan temukan visualisasi,
 
 ---
 
-![Infografik pentingnya data pendidikan di era digital](./assets/data-pendidikan-era-digital.png)
+![Infografik pentingnya data pendidikan di era digital](/assets/data-pendidikan-era-digital.png)
 *Alt Text: Infografik pentingnya data pendidikan di era digital*
