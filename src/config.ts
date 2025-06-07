@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
   description: "EduDataCenter adalah pusat data pendidikan berbasis digital yang menyediakan informasi, analisis, dan insight terbaru untuk mendukung kebijakan dan keputusan berbasis data. Dari angka putus sekolah hingga performa siswa, kami hadir untuk menjadikan data sebagai pondasi perubahan.",
   social: {
     github: "https://github.com/hilaltechnologic", // leave empty if you don't want to show the github
-    linkedin: "https://www.linkedin.com/in/someone/", // leave empty if you don't want to show the linkedin
+    linkedin: "", // leave empty if you don't want to show the linkedin
     email: "hilal@technologist.com", // leave empty if you don't want to show the email
     rss: true, // set this to false if you don't want to provide an rss feed
   },
