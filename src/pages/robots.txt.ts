@@ -7,6 +7,7 @@ Allow: /blog/
 Disallow: /tags/
 Disallow: /archives/
 
+Sitemap: https://data.educentrals.com/sitemap-0.xml
 Sitemap: ${sitemapURL.href}
 `;
 
