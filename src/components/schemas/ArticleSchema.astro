@@ -1,0 +1,14 @@
+---
+import { siteConfig } from '../../config';
+import { generateArticleSchema } from '../../utils/schema';
+
+export interface Props {
+  post: any;
+  url: string;
+}
+
+const { post, url } = Astro.props;
+const schema = generateArticleSchema(post, siteConfig, url);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

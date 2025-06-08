@@ -4,6 +4,8 @@ import Footer from '../components/Footer.astro'
 import { ClientRouter, slide } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
 import { siteConfig } from '../config'
+import WebsiteSchema from '../components/schemas/WebsiteSchema.astro'
+import OrganizationSchema from '../components/schemas/OrganizationSchema.astro'
 
 interface Props {
   title: string
@@ -28,6 +30,9 @@ const { title, description = 'Temukan data dan insight pendidikan Indonesia di E
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
+    <WebsiteSchema />
+    <OrganizationSchema />
+    <slot name="head" />
     <ClientRouter />
   </head>
   <body class="min-h-screen bg-white dark:bg-gray-900">

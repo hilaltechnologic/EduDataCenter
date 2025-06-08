@@ -2,7 +2,10 @@
 import BaseLayout from './BaseLayout.astro'
 import PostDate from '../components/PostDate.astro'
 import PostTags from '../components/PostTags.astro'
+import ArticleSchema from '../components/schemas/ArticleSchema.astro'
+import BreadcrumbSchema from '../components/schemas/BreadcrumbSchema.astro'
 import type { CollectionEntry } from 'astro:content'
+import { siteConfig } from '../config'
 
 interface Props {
   post: CollectionEntry<'blog'>
@@ -10,9 +13,21 @@ interface Props {
 
 const { post } = Astro.props
 const { title, date, tags, image } = post.data
+
+// Generate breadcrumb items
+const breadcrumbItems = [
+  { name: 'Home', url: siteConfig.site },
+  { name: 'Blog', url: `${siteConfig.site}blog/` },
+  { name: title, url: Astro.url.href }
+]
+
+// Generate full URL for article
+const articleUrl = Astro.url.href
 ---
 
 <BaseLayout title={title}>
+  <ArticleSchema slot="head" post={post} url={articleUrl} />
+  <BreadcrumbSchema slot="head" items={breadcrumbItems} />
   <article class="max-w-3xl mx-auto px-4">
     {image && <img src={image} alt={title} class="w-full h-[400px] object-cover rounded-xl shadow-lg mb-8" loading="eager" />}
     <header class="mb-12">

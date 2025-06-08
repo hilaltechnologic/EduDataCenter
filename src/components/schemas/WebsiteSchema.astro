@@ -1,0 +1,8 @@
+---
+import { siteConfig } from '../../config';
+import { generateWebsiteSchema } from '../../utils/schema';
+
+const schema = generateWebsiteSchema(siteConfig);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

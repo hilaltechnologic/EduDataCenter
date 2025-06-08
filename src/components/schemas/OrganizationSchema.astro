@@ -1,0 +1,8 @@
+---
+import { siteConfig } from '../../config';
+import { generateOrganizationSchema } from '../../utils/schema';
+
+const schema = generateOrganizationSchema(siteConfig);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
